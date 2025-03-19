@@ -1,0 +1,534 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff4a3d;
+}
+
+.btn-secondary {
+  border: 2px solid #ff6f61;
+  color: #ff6f61;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #ff6f61;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Sección Hero */
+.hero {
+  background-image: url('hero-bg.jpg'); /* Cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Sección ¿Cómo funciona? */
+.how-it-works {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.how-it-works h2 {
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.step {
+  max-width: 300px;
+}
+
+.step span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+/* Sección Beneficios */
+.benefits {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.benefit {
+  max-width: 300px;
+}
+
+.featured-artists {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.login-section, .register-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.login-section input,
+.register-section input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-section button,
+.register-section button {
+  margin-top: 20px;
+}
+
+/* Estilos del carrusel */
+.carrusel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carrusel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.carrusel-item img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.carrusel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Garantía */
+.garantia {
+  background-color: #f0f4ff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.garantia h2 {
+  color: #ff6f61;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.garantia h3 {
+  color: #ff6f61;
+  margin-top: 20px;
+}
+
+.garantia p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.garantia ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+
+.garantia li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Estilos para la página de explorar artistas */
+.explorar-artistas {
+  padding: 20px;
+  text-align: center;
+}
+
+.explorar-artistas h1 {
+  margin-bottom: 20px;
+}
+
+.filtros {
+  margin-bottom: 40px;
+}
+
+.filtros input,
+.filtros select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filtros button {
+  padding: 10px 20px;
+}
+
+.lista-artistas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.artista {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.artista img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.artista h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.artista p {
+  margin: 5px 0;
+}
+
+.artista .btn-secondary {
+  margin-top: 10px;
+}
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.language-switcher button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.language-switcher button:hover {
+  background-color: #ff4a3d;
+}
+
+/* Estilos del menú hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Estilos del perfil */
+.perfil {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perfil-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.perfil-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.perfil-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.perfil-header .especialidad,
+.perfil-header .ubicacion {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.perfil-redes {
+  margin-top: 20px;
+}
+
+.perfil-redes a {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.perfil-redes a:hover {
+  color: #ff6f61;
+}
+
+/* Estilos del portafolio */
+.portafolio {
+  margin-top: 40px;
+}
+
+.portafolio h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portafolio-item {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.portafolio-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.portafolio-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilos del formulario de contacto */
+.contacto {
+  margin-top: 40px;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contacto textarea {
+  height: 150px;
+}
+
+.contacto button {
+  align-self: center;
+}
